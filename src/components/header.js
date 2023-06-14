@@ -11,47 +11,63 @@ import profile from "../assets/profile.png"
 const Header = function () {
     return (
         <div className="bg-dark">
-            <div className="nav navbar-expand-md bg-light text-dark justify-content-around">
-                <div>
-                    <ul className="navbar-nav">
-                        <li className="navbar-brand">
-                            <img src={logo} alt="logo"></img>
-                        </li>
-                    </ul>
+            <div className="nav navbar-expand-md bg-light text-dark row">
+                <div className="col-sm-3">
+                    <div className="m-4 justify-content-center">
+                        <ul className="navbar-nav">
+                            <li className="navbar-brand">
+                                <img src={logo} alt="logo"></img>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <form className="form-group row pt-3">
+                <div className="col-sm-6">
+                    <form className="form-group row pt-5">
                         <div className="col-10">
-                            <input typeof="search" className="form-control" />
+                            <input typeof="search" width="80%" placeholder="What are you searching for?" className="form-control" />
                         </div>
                         <div className="col-2">
-                            <button width="60px" height="60px" className="btn btn-success">Submit</button>
+                            <button className="btn btn-success">Submit</button>
                         </div>
                     </form>
                 </div>
-                <div>
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
+                <div className="col-sm-3">
+                    <div className="m-3">
+                        <ul className="navbar-nav justify-content-around">
+                            <li className="nav-item">
+                                <a href="#" className="nav-link">
+                                    <img src={home} alt="home"></img>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="#" className="nav-link">
+                                    <img src={notifications} alt="notification"></img>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="#" className="nav-link">
+                                    <img src={profile} alt="profile"></img>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul className="navbar-nav justify-content-around pl-5">
+                            <li className="nav-item">
+                                <a href="#" className="nav-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="#" className="nav-link">
+                                    Notifications
+                                </a>
+                            </li>
+                            <li className="nav-item">
                             <a href="#" className="nav-link">
-                                <img src={home} alt="home"></img>
+                                People
                             </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                <img src={chat} alt="message"></img>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                <img src={notifications} alt="notification"></img>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                <img src={profile} alt="profile"></img>
-                            </a>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div >
