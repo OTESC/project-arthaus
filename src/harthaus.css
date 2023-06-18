@@ -10,3 +10,14 @@
     width: 40vw;
     float: left;
 }
+
+#dpclick {
+    background: none;
+    opacity: 1;
+}
+
+#dpclick:active {
+    opacity: 0.7;
+    zoom: 1;
+}
+

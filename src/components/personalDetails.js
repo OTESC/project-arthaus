@@ -13,7 +13,7 @@ function PersonalDetails() {
             <div className="m-5">
                <Previous/>
                 <div className="text-center pb-5 mb-5">
-                    <img src={logo} className="mx-auto d-block rounded-circle" alt="displayPicture" />
+                    <img id="dpclick" src={logo} className="mx-auto d-block rounded-circle" alt="displayPicture" />
                     <input type="file" className="text-center" />
                 </div>
                 <div className="mt-5 pt-5 ml-4">
