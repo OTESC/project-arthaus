@@ -5,3 +5,8 @@
     grid-auto-flow: dense;
     gap: 5px;
 }
+
+.formsty {
+    width: 40vw;
+    float: left;
+}
