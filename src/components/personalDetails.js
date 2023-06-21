@@ -13,10 +13,11 @@ function PersonalDetails() {
             <div className="m-5">
                <Previous/>
                 <div className="text-center pb-5 mb-5">
+                    <h3 className="title">Personal Details</h3>
                     <img id="dpclick" src={logo} className="mx-auto d-block rounded-circle" alt="displayPicture" />
                     <input type="file" className="text-center" />
                 </div>
-                <div className="mt-5 pt-5 ml-4">
+                <div className="mt-5 pt-5 ml-4 subtitle">
                     <form className="formsty mb-5" action="#" method="post" noValidate>
                         <label htmlFor="fullName" className="form-label">Full name</label>
                         <input type="text" name="fullName" placeholder="The Uprising" className="form-control mb-3" />
