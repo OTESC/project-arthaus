@@ -1,3 +1,7 @@
+/* This is Harthaus General stylesheet
+    All classes and styles should be inputed in this folder
+    It's effects are applied globally so be cautious
+*/
 .imagg{
     margin-left: 2vw;
     display:grid;
