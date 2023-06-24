@@ -68,7 +68,10 @@
     width: 100%;
     background-color: transparent;
     padding: 0.75rem 1rem;
-    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px rgba(0, 0, 0, 0.226);
+    box-shadow: 1px 2px 3px gray;
     border-bottom: 1px black;
     color: black;
 }
@@ -78,16 +81,15 @@
 }
 
 .forgot {
-    display: flex;
-    justify-content: flex-end;
     font-size: 0.75rem;
     line-height: 1rem;
     margin: 8px 0 14px 0;
+    right: 20vw;
 }
 
 .forgot a,
 .signup a {
-    color: rgba(243, 244, 246, 1);
+    color: #40916C;
     text-decoration: none;
     font-size: 14px;
 }
