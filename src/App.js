@@ -18,7 +18,7 @@ import Signup from './components/signup';
 function App() {
   return (
     <div>
-      <Homepage />
+      <SignIn />
     </div>
   );
 }

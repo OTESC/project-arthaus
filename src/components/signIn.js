@@ -8,7 +8,7 @@ import googleIcon from "../assets/googleIcon.png"
 function SignIn() {
     return (
         <div>
-            <img src={background}  className="backg" alt=""/>
+            <img src={background} className="backg" alt="" />
             <div className="contain">
                 <div className="signin-logo ">
                     <img src={logoLight} alt="logo" />
@@ -21,7 +21,14 @@ function SignIn() {
                             <input type="text" name="username" id="username" placeholder="Email Address" />
                         </div>
                         <div className="input-group">
-                            <input type="password" name="password" id="password" placeholder="Password" />
+                            <input type="password" name="password" id="password" placeholder="Password" /> <span>
+                                <span>
+                                    <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+                                    </svg>
+                                </span>
+                            </span>
                             <div className="forgot">
                                 <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
                             </div>
@@ -35,10 +42,10 @@ function SignIn() {
                     </div>
                     <div className="social-icons">
                         <button aria-label="Log in with Google" className="icon">
-                             <img src={googleIcon} className="google" alt="signin"/> Continue with Google
+                            <img src={googleIcon} className="google" alt="signin" /> Continue with Google
                         </button>
                     </div>
-                    <p><span className="signup">Don't have an account yet? </span> 
+                    <p><span className="signup">Don't have an account yet? </span>
                         <a rel="noopener noreferrer" href="#" className="signing">Sign up</a> now.
                     </p>
                 </div>
