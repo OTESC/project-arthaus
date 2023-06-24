@@ -3,13 +3,12 @@ import './App.css';
 import Header from './components/header';
 import Slider from './components/slider';
 import Homebody from './components/homebody';
+import SignIn from './components/signIn';
 
 function App() {
   return (
     <div>
-      <Header/>
-      <Slider/>
-      <Homebody/>
+      <SignIn/>
     </div>
   );
 }
