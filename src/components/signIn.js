@@ -18,12 +18,10 @@ function SignIn() {
                     <h3 className="title">Sign In</h3>
                     <form className="form">
                         <div className="input-group">
-                            <label htmlFor="username">Username</label>
-                            <input type="text" name="username" id="username" placeholder="" />
+                            <input type="text" name="username" id="username" placeholder="Email Address" />
                         </div>
                         <div className="input-group">
-                            <label htmlFor="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="" />
+                            <input type="password" name="password" id="password" placeholder="Password" />
                             <div className="forgot">
                                 <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
                             </div>
@@ -32,7 +30,7 @@ function SignIn() {
                     </form>
                     <div className="social-message">
                         <div className="line"></div>
-                        <h4 className="message">Login with social accounts</h4>
+                        <h4 className="message">Or</h4>
                         <div className="line"></div>
                     </div>
                     <div className="social-icons">
