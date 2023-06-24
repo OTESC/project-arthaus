@@ -13,8 +13,8 @@ const Slider = function () {
         console.log("callback", index);
     }
     return (
-        <div className="bg-dark text-light">
-            <h1 className="p-3 title">Featured</h1>
+        <div className="text-dark">
+            <h1 className="p-4">Featured</h1>
             <Carousel slides={slides} autoplay={true} interval={3000} onSlideChange={callback} />
         </div>
     )

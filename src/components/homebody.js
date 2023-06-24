@@ -35,35 +35,58 @@ function Homebody() {
 
 
   return (
-    <div>
-      <div>
-        <h3 className="title p-3">FOR YOU</h3>
-      </div>
-      <div data-masonry='{"percentPosition": true}' className="imagg">
-        <div className="col">
-          <img src={images[0]} className="img-thumbnail" alt="1" />
-          <img src={images[1]} className="img-thumbnail" alt="2" />
-          <img src={images[2]} className="img-thumbnail" alt="3" />
-          <img src={images[3]} className="img-thumbnail" alt="4" />
-          <img src={images[4]} className="img-thumbnail" alt="5" />
-          <img src={images[5]} className="img-thumbnail" alt="6" />
+    <div >
+      <input id="switch" type="checkbox" />
+      <div class="app">
+        <div class="body">
+          <div>
+            <h3 className="p-4">FOR YOU</h3>
+          </div>
+          <div data-masonry='{"percentPosition": true}' className="imagg">
+            <div className="col">
+              <img src={images[0]} className="img-thumbnail" alt="1" />
+              <img src={images[1]} className="img-thumbnail" alt="2" />
+              <img src={images[2]} className="img-thumbnail" alt="3" />
+              <img src={images[3]} className="img-thumbnail" alt="4" />
+              <img src={images[4]} className="img-thumbnail" alt="5" />
+              <img src={images[5]} className="img-thumbnail" alt="6" />
+            </div>
+            <div className="col">
+              <img src={images[6]} className="img-thumbnail" alt="7" />
+              <img src={images[7]} className="img-thumbnail" alt="8" />
+              <img src={images[8]} className="img-thumbnail" alt="9" />
+              <img src={images[9]} className="img-thumbnail" alt="10" />
+              <img src={images[10]} className="img-thumbnail" alt="11" />
+              <img src={images[11]} className="img-thumbnail" alt="12" />
+            </div>
+            <div className="col">
+              <img src={images[12]} className="img-thumbnail" alt="13" />
+              <img src={images[13]} className="img-thumbnail" alt="14" />
+              <img src={images[14]} className="img-thumbnail" alt="15" />
+              <img src={images[15]} className="img-thumbnail" alt="16" />
+              <img src={images[16]} className="img-thumbnail" alt="17" />
+              <img src={images[17]} className="img-thumbnail" alt="18" />
+            </div>
+          </div>
+
+          <div class="phone">
+
+            <div class="content">
+
+              <label for="switch">
+                <div class="toggle"></div>
+                <div class="names">
+                  <p class="light">Light</p>
+                  <p class="dark">Dark</p>
+                </div>
+              </label>
+
+
+            </div>
+
+          </div>
         </div>
-        <div className="col">
-          <img src={images[6]} className="img-thumbnail" alt="7" />
-          <img src={images[7]} className="img-thumbnail" alt="8" />
-          <img src={images[8]} className="img-thumbnail" alt="9" />
-          <img src={images[9]} className="img-thumbnail" alt="10" />
-          <img src={images[10]} className="img-thumbnail" alt="11" />
-          <img src={images[11]} className="img-thumbnail" alt="12" />
-        </div>
-        <div className="col">
-          <img src={images[12]} className="img-thumbnail" alt="13" />
-          <img src={images[13]} className="img-thumbnail" alt="14" />
-          <img src={images[14]} className="img-thumbnail" alt="15" />
-          <img src={images[15]} className="img-thumbnail" alt="16" />
-          <img src={images[16]} className="img-thumbnail" alt="17" />
-          <img src={images[17]} className="img-thumbnail" alt="18" />
-        </div>
+
       </div>
     </div>
   )
