@@ -4,10 +4,12 @@ import "./signIn.css";
 import logoLight from "../assets/logoLight.png"
 import background from "../assets/background.png"
 import googleIcon from "../assets/googleIcon.png"
+import { Link } from "react-router-dom";
 
 function SignIn() {
     return (
         <div>
+
             <img src={background} className="backg" alt="" />
             <div className="contain">
                 <div className="signin-logo ">
@@ -33,7 +35,10 @@ function SignIn() {
                                 <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
                             </div>
                         </div>
-                        <button className="sign">Sign in</button>
+
+                        <Link to="/homePage" exact className="sign">
+                            Sign in
+                        </Link>
                     </form>
                     <div className="social-message">
                         <div className="line"></div>
@@ -46,7 +51,7 @@ function SignIn() {
                         </button>
                     </div>
                     <p><span className="signup">Don't have an account yet? </span>
-                        <a rel="noopener noreferrer" href="#" className="signing">Sign up</a> now.
+                        <Link to="/signup" className="signing" exact>Sign up</Link> now.
                     </p>
                 </div>
             </div>

@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import chat from "../assets/chat.png";
 import logo from "../assets/logo.png";
 import home from "../assets/home.png";
 import notifications from "../assets/notification.png";
 import profile from "../assets/profile.png"
 
 const Header = function () {
+
     return (
         <div className="header">
             <div className="nav navbar-expand-md text-dark row">
@@ -15,7 +16,9 @@ const Header = function () {
                     <div className="m-4 justify-content-center">
                         <ul className="navbar-nav">
                             <li className="navbar-brand">
-                                <img className="logo" src={logo} alt="logo"></img>
+                                <Link to="/">
+                                    <img className="logo" src={logo} alt="logo"></img>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -34,36 +37,36 @@ const Header = function () {
                     <div className="m-3">
                         <ul className="navbar-nav justify-content-around">
                             <li className="nav-item">
-                                <a href="#" className="nav-link">
+                                <Link to="/" className="nav-link">
                                     <img src={home} alt="home"></img>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link">
+                                <Link to="/" className="nav-link">
                                     <img src={notifications} alt="notification"></img>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link">
+                                <Link to="/personalDetails" className="nav-link">
                                     <img src={profile} alt="profile"></img>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className="navbar-nav icontext pl-5">
                             <li className="nav-item">
-                                <a href="#" className="nav-link">
+                                <Link to="/" className="nav-link">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link">
+                                <Link to="/" className="nav-link">
                                     Notifications
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                People
-                            </a>
+                                <Link to="/personalDetails" className="nav-link">
+                                    Profile
+                                </Link>
                             </li>
                         </ul>
                     </div>

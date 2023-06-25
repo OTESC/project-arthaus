@@ -8,10 +8,11 @@ import "../harthaus.css"
 
 function PersonalDetails() {
     return (
-        <div>
+        <div className="personalDetails">
             <Header />
+
             <div className="m-5">
-               <Previous/>
+                <Previous />
                 <div className="text-center pb-5 mb-5">
                     <h3 className="title">Personal Details</h3>
                     <img id="dpclick" src={logo} className="mx-auto d-block rounded-circle" alt="displayPicture" />
@@ -46,6 +47,7 @@ function PersonalDetails() {
                     </form>
                 </div>
             </div>
+
         </div>
     )
 }

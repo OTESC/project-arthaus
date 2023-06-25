@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project-arthaus/static/css/main.69fb3494.css",
-    "main.js": "/project-arthaus/static/js/main.8e11a62c.js",
+    "main.css": "/project-arthaus/static/css/main.197eba1c.css",
+    "main.js": "/project-arthaus/static/js/main.b56bb2ed.js",
     "static/js/787.8d4f12bd.chunk.js": "/project-arthaus/static/js/787.8d4f12bd.chunk.js",
     "static/media/gadgets.png": "/project-arthaus/static/media/gadgets.a4c226dd6463eb9b67ff.png",
     "static/media/techpark.png": "/project-arthaus/static/media/techpark.272780dac9fca7c8a5c5.png",
@@ -23,12 +23,12 @@
     "static/media/tscenery.png": "/project-arthaus/static/media/tscenery.4a88bc79de08678d617b.png",
     "static/media/AI.png": "/project-arthaus/static/media/AI.3410ac7f2ae496ed02be.png",
     "index.html": "/project-arthaus/index.html",
-    "main.69fb3494.css.map": "/project-arthaus/static/css/main.69fb3494.css.map",
-    "main.8e11a62c.js.map": "/project-arthaus/static/js/main.8e11a62c.js.map",
+    "main.197eba1c.css.map": "/project-arthaus/static/css/main.197eba1c.css.map",
+    "main.b56bb2ed.js.map": "/project-arthaus/static/js/main.b56bb2ed.js.map",
     "787.8d4f12bd.chunk.js.map": "/project-arthaus/static/js/787.8d4f12bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69fb3494.css",
-    "static/js/main.8e11a62c.js"
+    "static/css/main.197eba1c.css",
+    "static/js/main.b56bb2ed.js"
   ]
 }
