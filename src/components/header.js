@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
+import ".//mobile.css";
 import logo from "../assets/logo.png";
 import home from "../assets/home.png";
 import notifications from "../assets/notification.png";
@@ -23,7 +24,7 @@ const Header = function () {
                         </ul>
                     </div>
                 </div>
-                <div className="col-sm-6 pt-2">
+                <div className="col-sm-6 pt-2 searchbar">
                     <form className="form-group row pt-5">
                         <div className="col-10">
                             <input typeof="search" width="80%" placeholder="What are you searching for?" className="form-control" />
