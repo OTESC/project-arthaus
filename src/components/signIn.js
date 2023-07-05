@@ -1,12 +1,43 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, {useState} from "react";
 import "./signIn.css";
 import logoLight from "../assets/logoLight.png"
 import background from "../assets/background.png"
 import googleIcon from "../assets/googleIcon.png"
 import { Link } from "react-router-dom";
+import $ from 'jquery'
 
 function SignIn() {
+    const [result, setResult] = useState("");
+    const [username, setusername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        if (name === username) {
+            setusername(value);
+        }
+        if (name === password) {
+            setPassword(value);
+        }
+
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = $(e.target);
+        $.ajax({
+            type: "POST",
+            url: form.attr("action"),
+            data: form.serialize(),
+            success(data) {
+                setResult(data);
+            }
+        });
+        console.log(username, password)
+    };
+
     return (
         <div>
 
@@ -18,12 +49,12 @@ function SignIn() {
                 </div>
                 <div className="form-container">
                     <h3 className="title">Sign In</h3>
-                    <form className="form">
+                    <form className="form"  action="http://harthaus.000webhostapp.com/server.php" method="post" onSubmit={(e) => handleSubmit(e)}>
                         <div className="input-group">
-                            <input type="text" name="username" id="username" placeholder="Email Address" />
+                            <input type="text" name="username" value={username} id="username" onChange={(e) => handleChange(e)} placeholder="Email Address" />
                         </div>
                         <div className="input-group">
-                            <input type="password" name="password" id="password" placeholder="Password" /> <span>
+                            <input type="password" name="password" value={password} id="password" onChange={(e) => handleChange(e)} placeholder="Password" /> <span>
                                 <span>
                                     <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>

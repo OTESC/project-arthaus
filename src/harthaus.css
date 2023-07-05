@@ -269,6 +269,7 @@
 .icontext {
     display: flex;
     justify-content: space-evenly;
+    font-size: 1rem;
 }
 
 .logo {
@@ -319,4 +320,122 @@
 .personalDetails {
     height: 100vh;
     max-height: 110vw;
+}
+
+.imgtxt {
+    font-size: .5rem;
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.close, .navmenu {
+    display: none;
+}
+
+@media screen and (max-width:575px) {
+    * {
+        font-family: lato, sans-serif;
+    }
+
+    h1, h3 {
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        position: absolute;
+        width: 250px;
+        height: 66px;
+        left: 72px;
+        top: 44px;
+    }
+
+    .searchbar {
+        position: relative;
+        width: 40vw;
+        margin-left: 25vw;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .searchbar button {
+        width: 10vw;
+        font-size: 12px;
+    }
+
+    .searchbar ::placeholder {
+        font-size: 10px;
+    }
+
+    .icon {
+        position: fixed;
+        left: 85%;
+        top: 11%;
+    }
+    
+    .icontext {
+        display: flex;
+        font-size: 14px;
+        justify-content: space-evenly;
+    }
+
+    #dpclick {
+        background: none;
+        opacity: 1;
+        width: 20vw;
+    }
+    
+    #dpclick:active {
+        opacity: 0.7;
+        zoom: 1;
+    }
+
+    .formsty {
+        width: 60vw;
+        text-align: center;
+        margin-left: 8vw;
+        font-size: 1.25rem;
+    }
+
+    .formsty button {
+        position: relative;
+        float: left;
+        margin-left: 20vw;
+        bottom: 5vh;
+    }
+
+    .imgRes {
+        width: 1.25rem;
+    }
+
+    .imgtxt {
+        font-size: .5rem;
+        color: white;
+        position: relative;
+        display: block;
+    }
+
+    .imgtxt0 {
+        display: none;
+    }
+
+    .navmenu {
+        font-size: 1.25rem;
+        cursor: pointer;
+        position: fixed;
+        display: block;
+        left: 85%;
+        top: 6vh;
+        color: black;
+    }
+
+    .close {
+        display: block;
+        cursor: pointer;
+        color: #a8a7a8;
+        border: 1px solid black;
+        border-radius: 35%;
+        border-style:groove;
+        font-size: 20px;
+    }
 }

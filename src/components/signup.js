@@ -1,14 +1,52 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import "./signIn.css";
 import logoLight from "../assets/logoLight.png"
 import background from "../assets/background.png"
 import googleIcon from "../assets/googleIcon.png"
+import $ from 'jquery';
 
 function Signup() {
-return (
-<div>
-            <img src={background}  className="backg" alt=""/>
+    const [result, setResult] = useState("");
+    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        if (name === fullName) {
+            setFullName(value);
+        }
+        if (name === email) {
+            setEmail(value);
+        }
+        if (name === password) {
+            setPassword(value);
+        }
+        if (name === confirmPassword) {
+            setConfirmPassword(value);
+        }
+
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = $(e.target);
+        $.ajax({
+            type: "POST",
+            url: form.attr("action"),
+            data: form.serialize(),
+            success(data) {
+                setResult(data);
+            }
+        });
+        console.log(fullName, email, password)
+    };
+    return (
+        <div>
+            <img src={background} className="backg" alt="" />
             <div className="contain">
                 <div className="signin-logo ">
                     <img src={logoLight} alt="logo" />
@@ -16,22 +54,22 @@ return (
                 </div>
                 <div className="form-container">
                     <h3 className="title">Sign up</h3>
-                    <form className="form">
+                    <form className="form" action="http://harthaus.000webhostapp.com/server.php" method="post" onSubmit={(e) => handleSubmit(e)}>
                         <div className="input-group">
-                            <label htmlFor="fullname"></label>
-                            <input type="text" name="username" id="username" placeholder="Full Name" />
+                            <label htmlFor="fullName"></label>
+                            <input type="text" name="fullName" value={fullName} onChange={(e) => handleChange(e)} id="fullName" placeholder="Full Name" />
                         </div>
                         <div className="input-group">
-                            <label htmlFor="Email"></label>
-                            <input type="text" name="email" id="username" placeholder="Email" />
+                            <label htmlFor="email"></label>
+                            <input type="text" name="email" value={email} onChange={(e) => handleChange(e)} id="email" placeholder="Email" />
                         </div>
                         <div className="input-group">
                             <label htmlFor="password"></label>
-                            <input type="password" name="password" id="password" placeholder="Password" />
+                            <input type="password" name="password" value={password} onChange={(e) => handleChange(e)} id="password" placeholder="Password" />
                         </div>
                         <div className="input-group">
                             <label htmlFor=" confirm password"></label>
-                            <input type="password" name="password" id="password" placeholder="Confirm Password" />
+                            <input type="password" name="confirmPassword" value={confirmPassword} onChange={(e) => handleChange(e)} id="confirmPassword" placeholder="Confirm Password" />
                         </div>
                         <button className="sign">Sign up</button>
                     </form>
@@ -42,16 +80,16 @@ return (
                     </div>
                     <div className="social-icons">
                         <button aria-label="Log in with Google" className="icon">
-                             <img src={googleIcon} className="google" alt="signin"/> Continue with Google
+                            <img src={googleIcon} className="google" alt="signin" /> Continue with Google
                         </button>
                     </div>
-                    <p><span className="signup">Don't have an account yet? </span> 
+                    <p><span className="signup">Don't have an account yet? </span>
                         <a rel="noopener noreferrer" href="#" className="signing">Sign up</a> now.
                     </p>
                 </div>
             </div>
         </div>
-)
+    )
 
 }
 export default Signup
