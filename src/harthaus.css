@@ -333,7 +333,7 @@
     display: none;
 }
 
-@media screen and (max-width:575px) {
+@media screen and (max-width:576px) and (min-width:0px) {
     * {
         font-family: lato, sans-serif;
     }
