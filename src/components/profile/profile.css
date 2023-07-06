@@ -70,9 +70,10 @@ button {
 }
 
 .settings_icon {
-  margin-top: -250px;
-  margin-bottom: 10px;
-  margin-left: 900px;
+  position: relative;
+  float: right;
+  bottom: 33vh;
+  right: 5vw;
   width: 30px;
   height: 30px;
   transition: transform 0.5s
@@ -88,7 +89,7 @@ button {
   width: 320px;
   max-height: 400px;
   overflow:hidden;
-  transition: max-height 0.5s
+  transition: max-height 0.5s;
 }
 
 

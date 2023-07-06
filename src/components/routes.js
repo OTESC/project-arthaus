@@ -6,6 +6,7 @@ import FrequentlyAskedQuestions from "./frequentQuestions";
 import SignIn from "./signIn";
 import Signup from "./signup";
 import PersonalDetails from "./personalDetails";
+import ProfilePage from "./profile/profile_page";
 
 const Routing = () => {
     return (
@@ -14,6 +15,7 @@ const Routing = () => {
 
             <Route exact path="/signIn" element={<SignIn />} />
             <Route exact path="/signup" element={<Signup />} />
+            <Route path="/profile/profile_page" element={<ProfilePage/>}/>
 
             <Route path="/frquentQuestions" element={<FrequentlyAskedQuestions/>}/>
             <Route path="/privacyPolicy" element={<PrivacyPolicy/>}/>

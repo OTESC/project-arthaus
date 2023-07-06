@@ -60,7 +60,7 @@ const Header = function () {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/personalDetails" className="nav-link">
+                                <Link to="/profile/profile_page" className="nav-link">
                                     <img src={profile} className="imgRes" alt="profile"></img>
                                     <span className="imgtxt">Profile</span>
                                 </Link>
@@ -78,7 +78,7 @@ const Header = function () {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/personalDetails" className="nav-link imgtxt0">
+                                <Link to="/profile/profile_page" className="nav-link imgtxt0">
                                     Profile
                                 </Link>
                             </li>
