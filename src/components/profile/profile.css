@@ -1,0 +1,130 @@
+.user_bio_box {
+  padding: 0 5%;
+}
+.follow_likes {
+  line-height: 18px;
+}
+
+.follow_likes div p {
+  color: hsla(0, 0%, 9%, 0.5);
+}
+button {
+  padding: 1% 23.49%;
+  background-color: white;
+  border-style: hidden hidden solid hidden;
+}
+
+.postsbutton:hover {
+  border-color: #52b788;
+  color: #52b788;
+  border-style: solid solid solid hidden;
+}
+.savedbutton:hover {
+  border-color: #52b788;
+  color: #52b788;
+  border-style: solid hidden solid solid;
+}
+.posted_images {
+  margin: 1vw 8vw 0 8vw;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.saved_images {
+    margin: 1vw 2vw 0 4.5vw;
+  display: grid;
+  grid-auto-flow: dense;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 24px;
+}
+
+.all_posts {
+  position: absolute;
+  left: 20px;
+  top: 320px;
+  z-index: 2;
+}
+
+.portraits {
+  position: absolute;
+  left: 675px;
+  top: 320px;
+  z-index: 2;
+}
+
+.AI {
+  position: absolute;
+  left: 20px;
+  top: 680px;
+  z-index: 2;
+}
+
+.architecture {
+  position: absolute;
+  left: 675px;
+  top: 680px;
+  z-index: 2;
+}
+
+.settings_icon {
+  margin-top: -250px;
+  margin-bottom: 10px;
+  margin-left: 900px;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s
+}
+.settings_icon:hover {
+  transform: translateX(5px)
+}
+
+.sub_settings_wrap {
+  position: absolute;
+  /* top: 100%;
+  right: 100%; */
+  width: 320px;
+  max-height: 400px;
+  overflow:hidden;
+  transition: max-height 0.5s
+}
+
+
+
+.sub_settings{
+  background: #f0eded;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+
+
+.faq {
+  display: flex;
+  align-items: center;
+}
+
+.faq p {
+  font-weight:500;
+  width: 100%;
+}
+
+.faq img {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 16px
+
+}
+
+.sub_settings:hover p{
+  font-weight: 700;
+}
+
+.sub_settings:hover img{
+  width: 25px;
+}
+
