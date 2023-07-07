@@ -112,17 +112,26 @@ button {
 
 
 
-.faq {
+.faq_icon, .personal_details_icon {
   display: flex;
   align-items: center;
+  margin-bottom: -100px ;
 }
 
-.faq p {
+.settings_drop_icon {
+  display: flex;
+  align-items: center;
+  margin: -50px 0px -85px 0px;
+}
+
+
+.faq_icon p, .settings_drop_icon p, .personal_details_icon p {
   font-weight:500;
   width: 100%;
+  text-align: left;
 }
 
-.faq img {
+.faq_icon img, .settings_drop_icon img, .personal_details_icon img {
   width: 20px;
   border-radius: 50%;
   margin-right: 15px;
