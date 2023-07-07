@@ -69,16 +69,25 @@ button {
   z-index: 2;
 }
 
-.settings_icon {
-  position: relative;
-  float: right;
-  bottom: 33vh;
-  right: 5vw;
+.add_post_icon {
+  margin-top: -430px;
+  margin-bottom: 10px;
+  margin-left: 1362px;
   width: 30px;
   height: 30px;
   transition: transform 0.5s
 }
-.settings_icon:hover {
+
+.settings_icon {
+  margin-top: -380px;
+  margin-bottom: 10px;
+  margin-left: 1290px;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s
+}
+
+.settings_icon:hover, .add_post_icon:hover {
   transform: translateX(5px)
 }
 
@@ -128,4 +137,13 @@ button {
 .sub_settings:hover img{
   width: 25px;
 }
+
+
+
+
+
+
+
+
+
 
