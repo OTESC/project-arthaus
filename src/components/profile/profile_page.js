@@ -7,6 +7,7 @@ import UserBio from "./user_bio";
 import "./profile.css"
 const ProfilePage = () => {
   return (
+
     <div>
       <Header />
       <UserBio />
@@ -14,6 +15,7 @@ const ProfilePage = () => {
       <AddPost />
       <PostsSaved />
     </div>
+    
   );
 };
 export default ProfilePage;

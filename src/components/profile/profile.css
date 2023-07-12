@@ -93,11 +93,11 @@ button {
 
 .sub_settings_wrap {
   position: absolute;
-  /* top: 100%;
-  right: 100%; */
+   top: 29%;
+  right: 2.6%; 
   width: 320px;
-  max-height: 400px;
-  overflow:hidden;
+  max-height: 500px;
+  overflow: hidden;
   transition: max-height 0.5s;
 }
 
@@ -111,8 +111,7 @@ button {
 }
 
 
-
-.faq_icon, .personal_details_icon {
+.personal_details_icon, .faq_icon, .privacy_icon, .terms_icon, .logout_icon {
   display: flex;
   align-items: center;
   margin-bottom: -100px ;
@@ -125,25 +124,30 @@ button {
 }
 
 
-.faq_icon p, .settings_drop_icon p, .personal_details_icon p {
-  font-weight:500;
+.settings_drop_icon p, .personal_details_icon p, .faq_icon p, .privacy_icon p, .terms_icon p, .logout_icon p {
+  font-weight: 500;
   width: 100%;
   text-align: left;
+  display: inline;
+  text-decoration: none;
+  color: #181818;
+  font-size: 17.99px;
 }
 
-.faq_icon img, .settings_drop_icon img, .personal_details_icon img {
+.settings_drop_icon img, .personal_details_icon img, .faq_icon img, .privacy_icon img, .terms_icon img, .logout_icon img {
   width: 20px;
   border-radius: 50%;
   margin-right: 15px;
-  margin-bottom: 16px
-
+  margin-bottom: 16px;
+  margin-top: 12px;
 }
 
-.sub_settings:hover p{
-  font-weight: 700;
+.personal_details_icon:hover p, .faq_icon:hover p, .privacy_icon:hover p, .terms_icon:hover p, .logout_icon:hover p{
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.sub_settings:hover img{
+.personal_details_icon:hover img, .faq_icon:hover img, .privacy_icon:hover img, .terms_icon:hover img, .logout_icon:hover img {
   width: 25px;
 }
 
