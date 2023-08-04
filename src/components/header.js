@@ -78,7 +78,7 @@ const Header = function () {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/profile/profile_page" className="nav-link imgtxt0">
+                                <Link to="/profile_page" className="nav-link imgtxt0">
                                     Profile
                                 </Link>
                             </li>
