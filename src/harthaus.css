@@ -6,6 +6,7 @@
 .header {
     background: #F8F9FA;
     box-shadow: 1px 2px 5px rgba(136, 134, 134, 0.5);
+    overflow-x: hidden;
 }
 
 /* GENERAL */
@@ -311,8 +312,8 @@
 }
 
 .subtitle {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
     font-family: lato;
     line-height: 28.8px;
 }
