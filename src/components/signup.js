@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./signIn.css";
+import { Link } from "react-router-dom";
 import logoLight from "../assets/logoLight.png"
 import background from "../assets/background.png"
 import googleIcon from "../assets/googleIcon.png"
@@ -83,8 +84,8 @@ function Signup() {
                             <img src={googleIcon} className="google" alt="signin" /> Continue with Google
                         </button>
                     </div>
-                    <p><span className="signup">Don't have an account yet? </span>
-                        <a rel="noopener noreferrer" href="#" className="signing">Sign up</a> now.
+                    <p><span className="signup">Already have an account? </span>
+                        <Link to="/signIn" className="signing" exact>Sign in</Link> now.
                     </p>
                 </div>
             </div>

@@ -41,7 +41,7 @@ function SignIn() {
     return (
         <div>
 
-            <img src={background} className="backg" alt="" />
+            <img src={background} className="backg" alt="Harthaus" />
             <div className="contain">
                 <div className="signin-logo ">
                     <img src={logoLight} alt="logo" />
@@ -51,10 +51,10 @@ function SignIn() {
                     <h3 className="title">Sign In</h3>
                     <form className="form"  action="http://harthaus.000webhostapp.com/server.php" method="post" onSubmit={(e) => handleSubmit(e)}>
                         <div className="input-group">
-                            <input type="text" name="username" value={username} id="username" onChange={(e) => handleChange(e)} placeholder="Email Address" />
+                            <input type="text" name="username" id="username" onChange={(e) => handleChange(e)} placeholder="Email Address" />
                         </div>
                         <div className="input-group">
-                            <input type="password" name="password" value={password} id="password" onChange={(e) => handleChange(e)} placeholder="Password" /> <span>
+                            <input type="password" name="password" id="password" onChange={(e) => handleChange(e)} placeholder="Password" /> <span>
                                 <span>
                                     <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>

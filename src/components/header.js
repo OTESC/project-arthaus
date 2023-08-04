@@ -25,7 +25,7 @@ const Header = function () {
                     <div className="m-4 justify-content-center">
                         <ul className="navbar-nav">
                             <li className="navbar-brand">
-                                <Link to="/">
+                                <Link to="/homePage">
                                     <img className="logo" src={logo} alt="logo"></img>
                                 </Link>
                             </li>
@@ -48,13 +48,13 @@ const Header = function () {
                         <span className="close" onClick={closeNav}>&times;</span>
                         <ul className="navbar-nav justify-content-around">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link">
+                                <Link to="/homePage" className="nav-link">
                                     <img src={home} className="imgRes" alt="home"></img>
                                     <span className="imgtxt">Home</span>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/" className="nav-link">
+                                <Link to="/homePage" className="nav-link">
                                     <img src={notifications} className="imgRes" alt="notification"></img>
                                     <span className="imgtxt">Notifications</span>
                                 </Link>
@@ -68,12 +68,12 @@ const Header = function () {
                         </ul>
                         <ul className="navbar-nav icontext pl-5">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link imgtxt0">
+                                <Link to="/homePage" className="nav-link imgtxt0">
                                     Home
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/" className="nav-link imgtxt0">
+                                <Link to="/homePage" className="nav-link imgtxt0">
                                     Notifications
                                 </Link>
                             </li>

@@ -11,7 +11,8 @@ import ProfilePage from "./profile/profile_page";
 const Routing = () => {
     return (
         <Routes>
-            <Route exact path="/" element={<Homepage />} />
+            <Route exact path="/" element={<SignIn />} />
+            <Route exact path="/homePage" element={<Homepage />} />
 
             <Route exact path="/signIn" element={<SignIn />} />
             <Route exact path="/signup" element={<Signup />} />
