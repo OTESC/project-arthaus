@@ -58,19 +58,19 @@ function Signup() {
                     <form className="form" action="http://harthaus.000webhostapp.com/server.php" method="post" onSubmit={(e) => handleSubmit(e)}>
                         <div className="input-group">
                             <label htmlFor="fullName"></label>
-                            <input type="text" name="fullName" value={fullName} onChange={(e) => handleChange(e)} id="fullName" placeholder="Full Name" />
+                            <input type="text" name="fullName" onChange={(e) => handleChange(e)} id="fullName" placeholder="Full Name" />
                         </div>
                         <div className="input-group">
                             <label htmlFor="email"></label>
-                            <input type="text" name="email" value={email} onChange={(e) => handleChange(e)} id="email" placeholder="Email" />
+                            <input type="text" name="email" onChange={(e) => handleChange(e)} id="email" placeholder="Email" />
                         </div>
                         <div className="input-group">
                             <label htmlFor="password"></label>
-                            <input type="password" name="password" value={password} onChange={(e) => handleChange(e)} id="password" placeholder="Password" />
+                            <input type="password" name="password" onChange={(e) => handleChange(e)} id="password" placeholder="Password" />
                         </div>
                         <div className="input-group">
                             <label htmlFor=" confirm password"></label>
-                            <input type="password" name="confirmPassword" value={confirmPassword} onChange={(e) => handleChange(e)} id="confirmPassword" placeholder="Confirm Password" />
+                            <input type="password" name="confirmPassword" onChange={(e) => handleChange(e)} id="confirmPassword" placeholder="Confirm Password" />
                         </div>
                         <button className="sign">Sign up</button>
                     </form>
