@@ -45,8 +45,8 @@ return (
                              <img src={googleIcon} className="google" alt="signin"/> Continue with Google
                         </button>
                     </div>
-                    <p><span className="signup">Don't have an account yet? </span> 
-                        <a rel="noopener noreferrer" href="#" className="signing">Sign up</a> now.
+                    <p><span className="signup">Already have an account? </span> 
+                        <a rel="noopener noreferrer" href="#" className="signing">Sign in</a> now.
                     </p>
                 </div>
             </div>
