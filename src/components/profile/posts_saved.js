@@ -68,7 +68,7 @@ const PostsSaved = () => {
 
   const [savedContent, setSavedContent] = useState([savedImages]);
   const clickSaved = () => {
-    setSavedContent(savedContent === [savedImages] ? "" : [savedImages]);
+    setSavedContent(savedContent === [savedImages] ? "" : [savedImages])
   };
 
   return (
